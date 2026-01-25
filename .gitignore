@@ -6,3 +6,6 @@ _site/
 .jekyll-metadata
 
 Gemfile.lock
+
+# Local bundler install path (makefile uses `bundle install --path vendor/bundle`)
+vendor/

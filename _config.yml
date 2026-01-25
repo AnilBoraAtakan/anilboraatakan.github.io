@@ -1,31 +1,22 @@
-title: "Anil Bora Atakan Personal Website"
+title: "Bora Atakan"
 author:
-  name: Anil Bora Atakan
+  name: Bora Atakan
   email: a.boraatakan@gmail.com
 
 description: >
-  Anil Bora Atakan - Personal Website
-
-theme: minima
+  Bora Atakan - Computer Science student at the University of Waterloo
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-header_pages:
-  - index.md
+# Uncomment if you want absolute URLs in SEO tags.
+url: "https://anilboraatakan.github.io"
+baseurl: ""
 
-minima: 
-  skin: classic
-
-  # baseurl: "/my-github-pages-site" # Replace with your repo name
-  # url: "https://anilboraatakan.github.io"
-
-  # markdown: kramdown
-
-  social_links:
-    - { platform: github, user_url: "https://github.com/AnilBoraAtakan" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/anıl-bora-atakan-6039a5247/" }
+social:
+  github: "https://github.com/AnilBoraAtakan"
+  linkedin: "https://www.linkedin.com/in/anil-bora-atakan/"
 
 exclude:
   - Gemfile
