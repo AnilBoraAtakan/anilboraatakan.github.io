@@ -9,3 +9,6 @@ Gemfile.lock
 
 # Local bundler install path (makefile uses `bundle install --path vendor/bundle`)
 vendor/
+
+# macOS Finder metadata
+.DS_Store
