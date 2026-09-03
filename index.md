@@ -27,7 +27,7 @@ title: Home
         <span class="meta">2025 – 2030</span>
       </div>
       <p>Waterloo, Ontario, Canada</p>
-      <p>GPA: 3.9/4.0</p>
+      <p>GPA: 3.7/4.0</p>
       <p><strong>Advanced Courses:</strong> Designing Functional Programs, Calculus 2, Linear Algebra 1</p>
     </div>
   </div>
@@ -37,8 +37,8 @@ title: Home
   <h2>Skills</h2>
   <div class="grid">
     <div class="card">
-      <p><strong>Languages:</strong> Python, Racket/Lisp, C (beginner)</p>
-      <p><strong>Technical Skills:</strong> Machine Learning, Robotics, Welding, Fabrication, SolidWorks, Arduino</p>
+      <p><strong>Languages:</strong> Python, Racket/Lisp, C, C++, Ruby</p>
+      <p><strong>Technical Skills:</strong> Machine Learning, PyTorch, MuJoCo, ROS, W&amp;B, Whisper, Robotics, Welding, Fabrication, SolidWorks, Arduino</p>
     </div>
   </div>
 </section>
@@ -48,12 +48,28 @@ title: Home
   <div class="grid">
     <div class="card">
       <div class="card__title">
+        <strong>University of Waterloo — Robotics Research Intern</strong>
+        <span class="meta">June 2026 – Present</span>
+      </div>
+      <ul>
+        <li>Lead an 8-person research team developing end-to-end visuomotor policies, mentored by a research scientist at Generalist.</li>
+        <li>Built and validated the full robot stack: a MuJoCo simulation environment, data collection, PyTorch training infrastructure, closed-loop inference, dashboards, and benchmarking. Achieved 99.8% policy success across 2,000+ episodes during an in-person demonstration.</li>
+        <li>Built a pipeline that records synchronized RGB observations, robot poses, and actions at 100 Hz, and collected 13 hours of high-quality pick-and-place data.</li>
+        <li>Developed and evaluated behavior-cloning policies using a DINOv3 backbone with Transformer and CNN/MLP architectures, image and action context windows, and action-chunk prediction.</li>
+        <li>Implemented real-time asynchronous inference that runs physics, policy, 100 Hz controls, and logging simultaneously on commodity hardware.</li>
+        <li>Implemented distributed training on A100 and H100 clusters using SLURM, W&amp;B, EMA checkpoints, and resumable training, accelerating throughput 9× by caching vision-encoder embeddings.</li>
+        <li>Built deterministic checkpoint benchmarking and Rerun visualization tools for comparing policies and inspecting observations, 3D trajectories, action horizons, executed commands, and success rates.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card__title">
         <strong>Thresh Power — Software Development Intern</strong>
         <span class="meta">Summer 2024</span>
       </div>
       <ul>
-        <li>Worked on search and information retrieval, gathering requirements and shipping backend and frontend features used by paying customers.</li>
-        <li>Shipped full-text search with Elasticsearch and Python, indexing thousands of PDF documents.</li>
+        <li>Worked on search and information retrieval, gathering requirements and planning the project under mentorship before independently shipping backend and frontend features used by paying customers.</li>
+        <li>Shipped full-text search with Elasticsearch and Python, indexing thousands of PDF documents; the company leveraged the feature to secure seed funding and attract new customers.</li>
         <li>Consolidated search under a single API, tuned ranking across filename/summary/content, and implemented result highlighting in React.</li>
       </ul>
     </div>
@@ -77,13 +93,14 @@ title: Home
 
     <div class="card">
       <div class="card__title">
-        <strong>Minecraft-like Model Training Sandbox</strong>
+        <strong>Minecraft RL Environment</strong>
         <span class="meta">Simulation / RL Data / React / FastAPI</span>
       </div>
       <ul>
         <li>Built a 3D game environment with seed-based deterministic generation, physics, and interactive objects.</li>
         <li>Implemented headless screenshot-based regression testing and replay tooling.</li>
-        <li>Added RL data collection and a React + FastAPI admin control UI.</li>
+        <li>Added an RL data-collection mode to build a dataset and fine-tune ViT backbones for real-time action-chunking control models.</li>
+        <li>Built an admin control UI in React and FastAPI.</li>
       </ul>
     </div>
 
@@ -106,7 +123,7 @@ title: Home
       </div>
       <p>
         Created a 183GB Hugging Face dataset for phoneme detection, built mixed-dataset dataloaders, and ran training
-        jobs on A10 and A100 GPUs to improve end-to-end evaluation metrics.
+        jobs on A10 and A100 GPUs through Lambda to improve end-to-end evaluation metrics.
       </p>
     </div>
 
@@ -166,7 +183,7 @@ title: Home
     <div class="resume">
       <div>
         <strong>Download PDF</strong>
-        <div class="meta">Last updated: Mar 1, 2026</div>
+        <div class="meta">Last updated: Sep 3, 2026</div>
       </div>
       <a class="button" href="{{ '/assets/cv/Bora_Atakan_Resume.pdf' | relative_url }}" target="_blank" rel="noopener">
         Bora_Atakan_Resume.pdf
